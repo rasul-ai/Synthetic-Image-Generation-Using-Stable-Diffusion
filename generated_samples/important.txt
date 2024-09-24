@@ -1,0 +1,1 @@
+This folder contains generated image samples after running `inference.py` file.
