@@ -73,7 +73,7 @@ To run with my own training files, I prepared the dataset according to the forma
 Then I have run this script to finally fine tune the stable diffusion model with my own dataset.
 ```
 export MODEL_NAME="CompVis/stable-diffusion-v1-4"
-export TRAIN_DIR="path_to_your_dataset"
+export TRAIN_DIR="path_to_the_dataset"
 
 accelerate launch --mixed_precision="fp16" train_text_to_image.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
@@ -87,6 +87,6 @@ accelerate launch --mixed_precision="fp16" train_text_to_image.py \
   --learning_rate=1e-05 \
   --max_grad_norm=1 \
   --lr_scheduler="constant" --lr_warmup_steps=0 \
-  --output_dir="sd-naruto-model"
+  --output_dir="my_diffusion_model"
 ```
 
