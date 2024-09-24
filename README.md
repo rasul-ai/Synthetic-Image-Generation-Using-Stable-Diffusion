@@ -48,10 +48,18 @@ This folder contains the primary code for training and inferring the model.
 
 ## How to Use
 
-### 1. Training the Model
-To train the model using your dataset, use the `train_text_to_image.py` script. Before running it, ensure that your dataset is properly structured and contains appropriate image-caption pairs.
+### Running Locally with PyTorch
 
-Example command:
+#### Installing the Dependencies
+
+Before running the scripts, make sure to install the library's training dependencies:
+
+**Important**:  
+To ensure you can successfully run the latest versions of the example scripts, we highly recommend installing from source and keeping the install up to date, as we update the example scripts frequently and add some example-specific requirements. To do this, execute the following steps in a new virtual environment:
+
 ```bash
-python train_text_to_image.py --dataset dataset_path --epochs 100
+git clone https://github.com/huggingface/diffusers
+cd diffusers
+pip install .
+
 
